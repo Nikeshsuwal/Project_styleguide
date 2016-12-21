@@ -1,0 +1,25 @@
+.search-wrap{
+  position: relative;
+  width: 70%;
+  form{
+    height: 50px;
+    width: 100%;
+  }
+  input{
+    // max-width: 200px;
+    // display: inline-block;
+    height: 100%;
+    width: 100%;
+    }
+    .fa{
+      position: absolute;
+      top: 18px;
+      left: 7px;
+
+    }
+  input[type=text]:focus{
+    box-shadow: none;
+  }
+}
+.navbar-brand{
+  border-color: #ccc;}
