@@ -1,0 +1,260 @@
+nav.navbar.navbar-default
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target=".navbar-collapse"]
+          span.sr-only
+            | Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand[href="#"]
+          | Neplearn
+      .navbar-collapse.collapse
+        ul.nav.navbar-nav.navbar-right
+          li.active
+            a[href="#"]
+              | Home
+          li
+            a[href="#about"]
+              | About
+          li
+            a[href="#contact"]
+              | Contact
+          li.dropdown
+            a.dropdown-toggle[href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"]
+              | Dropdown 
+              span.caret
+            ul.dropdown-menu
+              li
+                a[href="#"]
+                  | Action
+              li
+                a[href="#"]
+                  | Another action
+              li
+                a[href="#"]
+                  | Something else here
+              li.divider[role="separator"]
+              li.dropdown-header
+                | Nav header
+              li
+                a[href="#"]
+                  | Separated link
+              li
+                a[href="#"]
+                  | One more separated link
+
+.container
+  .row
+    .col-md-6
+      h1 48px This is also an h1 header
+      h2 36px This is also an h2 header
+      h3 24px This is also an h3 header
+      p This is the body text. It should be 14px and Lato Regular. The h1, h2 and h3 may can vary in color, but they will always be EB Garamond.
+    .col-md-6
+      .row
+        h4.lato COLORS
+        .col-md-12.color-container
+          .row
+            .col-md-2.col-xs-2.color-col-success
+            .col-md-2.col-xs-2.color-col-primary
+            .col-md-2.col-xs-2.color-col-warning
+            .col-md-2.col-xs-2.color-col-info
+            .col-md-2.col-xs-2.color-col-gray
+          .row
+            .col-md-2.col-xs-2.color-col-off-success
+            .col-md-2.col-xs-2.color-col-off-primary
+            .col-md-2.col-xs-2.color-col-off-warning
+            .col-md-2.col-xs-2.color-col-off-info
+            .col-md-2.col-xs-2.color-col-off-gray
+
+  .row.m-t-lg
+    .col-md-6
+      h4.lato FONTS
+      h3 Lato
+      p.lato
+        | Regular - ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        br
+        |abcdefghijklmnopqrstuvwxyz1234567890
+        br
+        br
+
+      h3.opensans
+          | Open Sans
+      p
+        | Regular - ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        br
+        |abcdefghijklmnopqrstuvwxyz1234567890
+        br
+        br
+      p
+        strong
+          | Bold - ABCDEFGHIJKLMNOPQRSTUVWXYZ
+          br
+          |abcdefghijklmnopqrstuvwxyz1234567890
+        br
+        br
+      p
+        em
+          | Italic - ABCDEFGHIJKLMNOPQRSTUVWXYZ
+          br
+          |abcdefghijklmnopqrstuvwxyz1234567890
+      br
+      br
+
+
+      h3.lato Course
+      .col-md-8
+        .course-w.bg-white.box-shadow.r.clear
+          .course-w__image
+            =image_tag "image.png", :class => "img-responsive"
+          .wrapper
+            .course-w__title
+              h4.text-sm.m-t-none.m-b-xs
+                =link_to "Learn Ruby on Rails - Build a Craigslist Clone", '#'
+              em.text-xs.text-muted.course-w__title-sub by Jhone Doe
+            .course-w__review.clearfix.m-t-md
+              span.pull-left
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+              span.enrolled-std.pull-right
+                span.m-r-sm 200
+                span.text-muted Enrolled
+
+
+    .col-md-6
+      .row        
+        .btn.btn-primary.m-r-sm Button Sample
+        .btn.btn-primary Button Sample
+      br
+      .row        
+        .btn.btn-info.m-r-sm Button Sample
+        .btn.btn-info Button Sample
+      br
+      .row        
+        .btn.btn-warning.m-r-sm Button Sample
+        .btn.btn-warning Button Sample
+      br
+
+      .row
+        .col-md-3.text-center
+          .circle-img-sm.center-block
+            =image_tag "profile-img.jpg", :class => "img-responsive"
+          p 60x60
+
+        .col-md-3.text-center
+          .circle-img-md.center-block
+            =image_tag "profile-img.jpg", :class => "img-responsive"
+          p 80x80
+
+        .col-md-3.text-center
+          .circle-img-lg.center-block
+            =image_tag "profile-img.jpg", :class => "img-responsive"
+          p 100x100
+          br
+          br
+
+      .row
+        .col-md-8
+          form role="form"
+            .form-group
+              label for="email"
+              input.form-control type="email" placeholder="Email Address"
+            .form-group
+              label for="textarea"
+              textarea type="text" placeholder="What you want the session to be about" class='form-control'
+            .form-group
+                .checkbox.i-checks
+                  label
+                    input type="checkbox" value="" /
+                    i
+                    | Option one
+                .checkbox.i-checks
+                  label
+                    input checked="" type="checkbox" value="" /
+                    i
+                    | Option two checked
+                .checkbox.i-checks
+                  label
+                    input checked="" disabled="" type="checkbox" value="" /
+                    i
+                    | Option three checked and disabled
+                .checkbox.i-checks
+                  label
+                    input disabled="" type="checkbox" value="" /
+                    i
+                    | Option four disabled
+                .radio.i-checks
+                  label
+                    input name="a" type="radio" value="option1" /
+                    i
+                    | Option one
+                .radio.i-checks
+                  label
+                    input checked="" name="a" type="radio" value="option2" /
+                    i
+                    | Option two checked
+                .radio.i-checks
+                  label
+                    input checked="" disabled="" type="radio" value="option2" /
+                    i
+                    | Option three checked and disabled
+                .radio.i-checks
+                  label
+                    input disabled="" name="a" type="radio" /
+                    i
+                    | Option four disabled
+            .form-group
+              select class= 'form-control'
+                option value="1" English (US)
+                option value="2" American English
+                option value="3" Chinies
+
+            .form-group
+              label for="submit"
+              input type="submit" placeholder="submit"
+
+.container
+  .row
+    .col-md-3
+      .dashboard-sidebar
+        /! SIDEBAR MENU
+        ul.nav.text-uppercase
+          li.dashboard-sidebar__active
+            a href="#" 
+              i.fa.fa-home
+              |   Dashboard
+          li 
+            a data-toggle="collapse" href="#collapse1"
+              i.fa.fa-home
+              | Appointments
+          #collapse1.list-collapse.collapse
+            ul.list-group
+            li.list-group-item 
+              a href="#" Active
+            li.list-group-item 
+              a href="#" Recent
+            li.list-group-item 
+              a href="#" Requests
+
+          li
+            a href="#" 
+              i.fa.fa-gear
+              |   Profile Settings
+          li
+            a href="#" target="_blank" 
+              i.glyphicon.glyphicon-ok
+              | Tasks
+          li
+            a href="#" 
+              i.glyphicon.glyphicon-flag
+              | Help
+          /! SIDEBAR BUTTONS
+        /! END SIDEBAR BUTTONS
+        /! END MENU
+    .col-md-9
+      .dashboard-content
+      | Some user related content goes here...
